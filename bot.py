@@ -2,13 +2,12 @@ import random
 import time
 import requests
 
-# আপনার প্রদান করা বট টোকেন, চ্যাট আইডি ও ছবির লিংক
 BOT_TOKEN = "8664893118:AAGzEUGWu3rskerlKk4v8N42sBlXFIMRFAg"
 CHAT_ID = "-1003991792277"
 IMAGE_URL = "https://i.postimg.cc/N02NLhCD/1790476363225.jpg"
 
 raw_names = """
- Ayaan
+Ayaan
 Zayan
 Aryan
 Rayyan
@@ -51,7 +50,6 @@ Wasif
 Ahil
 Nahian
 Zohan
-Rohan
 Tanvir
 Sami
 Nahid
@@ -107,7 +105,6 @@ Labib
 Nadim
 Shakib
 Tanim
-Rakin
 Abrar
 Ayman
 Azhar
@@ -131,508 +128,27 @@ Zuhair
 Ahnaf
 Mehran
 Sarfaraz
-Rayyan
-Aayan
-Zayan
-Aryan
-Rayyan
-Arham
 Anaya
-Kabir
-Aarav
-Rohan
-Reyansh
-Shaan
-Vivaan
-Zaid
-Farhan
-Rehan
-Aariz
-Arman
-Nihan
-Shayan
-Izaan
-Adyan
-Faheem
-Tahsin
-Rizwan
-Zubair
-Kian
-Hamza
-Taimur
-Bilal
-Ahad
-Daniyal
-Sameer
-Nabeel
-Zidan
-Rayan
 Myra
-Mirza
-Eshan
-Safwan
-Wasif
-Ahil
-Nahian
-Zohan
-Rohan
-Tanvir
-Sami
-Nahid
-Afnan
-Armaan
-Irfan
-Mahir
-Tawhid
-Zeeshan
-Rafi
-Rifat
-Anas
-Hasin
-Sayed
-Junaid
-Riyad
-Ivaan
-Siyam
-Rayid
 Ayat
-Parvez
-Ashik
-Shahil
-Aarush
-Tamim
-Aman
-Affan
-Yusuf
-Ayan
-Naeem
-Nafis
-Rakin
-Shahid
-Zuhayr
-Adil
-Ehan
-Munim
-Raad
-Tashfin
-Nihal
-Rizvi
-Sadman
-Shafin
-Arif
 Zara
-Mahi
-Zarif
-Araf
-Fahad
-Ruhan
-Sayhan
-Labib
-Nadim
-Shakib
-Tanim
-Rakin
-Abrar
-Ayman
-Azhar
-Hasan
-Farzin
-Zain
-Rabi
-Saad
-Tariq
-Imran
-Zavier
-Daiyan
-Arvin
-Raihan
-Mikael
-Suhail
-Zaki
-Faiyaz
-Nahiyan
-Zuhair
-Ahnaf
-Mehran
-Sarfaraz
-Rayyan
-Aayan
-Zayan
-Aryan
-Rayyan
-Arham
 Inaya
-Kabir
-Aarav
-Rohan
-Reyansh
-Shaan
-Vivaan
-Zaid
-Farhan
-Rehan
-Aariz
-Arman
-Nihan
-Shayan
-Izaan
-Adyan
-Faheem
-Tahsin
-Rizwan
-Zubair
-Kian
-Hamza
-Taimur
-Bilal
-Ahad
-Daniyal
-Sameer
-Nabeel
-Zidan
-Rayan
 Aria
-Mirza
-Eshan
-Safwan
-Wasif
-Ahil
-Nahian
-Zohan
-Rohan
-Tanvir
-Sami
-Nahid
-Afnan
-Armaan
-Irfan
-Mahir
-Tawhid
-Zeeshan
-Rafi
-Rifat
-Anas
-Hasin
-Sayed
-Junaid
-Riyad
-Ivaan
-Siyam
-Rayid
 Ayla
-Parvez
-Ashik
-Shahil
-Aarush
-Tamim
-Aman
-Affan
-Yusuf
-Ayan
-Naeem
-Nafis
-Rakin
-Shahid
-Zuhayr
-Adil
-Ehan
-Munim
-Raad
-Tashfin
-Nihal
-Rizvi
-Sadman
-Shafin
-Arif
 Zoya
-Mahi
-Zarif
-Araf
-Fahad
-Ruhan
-Sayhan
-Labib
-Nadim
-Shakib
-Tanim
-Rakin
-Abrar
-Ayman
-Azhar
-Hasan
-Farzin
-Zain
-Rabi
-Saad
-Tariq
-Imran
-Zavier
-Daiyan
-Arvin
-Raihan
-Mikael
-Suhail
-Zaki
-Faiyaz
-Nahiyan
-Zuhair
-Ahnaf
-Mehran
-Sarfaraz
-Rayyan
-Aayan
-Zayan
-Aryan
-Rayyan
-Arham
 Kiara
-Kabir
-Aarav
-Rohan
-Reyansh
-Shaan
-Vivaan
-Zaid
-Farhan
-Rehan
-Aariz
-Arman
-Nihan
-Shayan
-Izaan
-Adyan
-Faheem
-Tahsin
-Rizwan
-Zubair
-Kian
-Hamza
-Taimur
-Bilal
-Ahad
-Daniyal
-Sameer
-Nabeel
-Zidan
-Rayan
 Tara
-Mirza
-Eshan
-Safwan
-Wasif
-Ahil
-Nahian
-Zohan
-Rohan
-Tanvir
-Sami
-Nahid
-Afnan
-Armaan
-Irfan
-Mahir
-Tawhid
-Zeeshan
-Rafi
-Rifat
-Anas
-Hasin
-Sayed
-Junaid
-Riyad
-Ivaan
-Siyam
-Rayid
 Ira
-Parvez
-Ashik
-Shahil
-Aarush
-Tamim
-Aman
-Affan
-Yusuf
-Ayan
-Naeem
-Nafis
-Rakin
-Shahid
-Zuhayr
-Adil
-Ehan
-Munim
-Raad
-Tashfin
-Nihal
-Rizvi
-Sadman
-Shafin
-Arif
 Diya
-Mahi
-Zarif
-Araf
-Fahad
-Ruhan
-Sayhan
-Labib
-Nadim
-Shakib
-Tanim
-Rakin
-Abrar
-Ayman
-Azhar
-Hasan
-Farzin
-Zain
-Rabi
-Saad
-Tariq
-Imran
-Zavier
-Daiyan
-Arvin
-Raihan
-Mikael
-Suhail
-Zaki
-Faiyaz
-Nahiyan
-Zuhair
-Ahnaf
-Mehran
-Sarfaraz
-Rayyan
-Aayan
-Zayan
-Aryan
-Rayyan
-Arham
 Rhea
-Kabir
-Aarav
-Rohan
-Reyansh
-Shaan
-Vivaan
-Zaid
-Farhan
-Rehan
-Aariz
-Arman
-Nihan
-Shayan
-Izaan
-Adyan
-Faheem
-Tahsin
-Rizwan
-Zubair
-Kian
-Hamza
-Taimur
-Bilal
-Ahad
-Daniyal
-Sameer
-Nabeel
-Zidan
-Rayan
 Siya
-Mirza
-Eshan
-Safwan
-Wasif
-Ahil
-Nahian
-Zohan
-Rohan
-Tanvir
-Sami
-Nahid
-Afnan
-Armaan
-Irfan
-Mahir
-Tawhid
-Zeeshan
-Rafi
-Rifat
-Anas
-Hasin
-Sayed
-Junaid
-Riyad
-Ivaan
-Siyam
-Rayid
 Avani
-Parvez
-Ashik
-Shahil
-Aarush
-Tamim
-Aman
-Affan
-Yusuf
-Ayan
-Naeem
-Nafis
-Rakin
-Shahid
-Zuhayr
-Adil
-Ehan
-Munim
-Raad
-Tashfin
-Nihal
-Rizvi
-Sadman
-Shafin
-Arif
 Nyla
-Mahi
-Zarif
-Araf
-Fahad
-Ruhan
-Sayhan
-Labib
-Nadim
-Shakib
-Tanim
-Rakin
-Abrar
-Ayman
-Azhar
-Hasan
-Farzin
-Zain
-Rabi
-Saad
-Tariq
-Imran
-Zavier
-Daiyan
-Arvin
-Raihan
-Mikael
-Suhail
-Zaki
-Faiyaz
-Nahiyan
-Zuhair
-Ahnaf
-Mehran
-Sarfaraz
-Rayyan
 """
 
-# ইউনিক নাম ফিল্টার করা এবং র‍্যান্ডম সাজানো
-unique_names = list(set([name.strip() for name in raw_names.strip().split("\n") if name.strip()]))
-random.shuffle(unique_names)
+# ইউনিক নাম ফিল্টার ও র‍্যান্ডম সাজানো
+names_list = list(set([n.strip() for n in raw_names.strip().split("\n") if n.strip()]))
+random.shuffle(names_list)
 
 def generate_account_number():
     prefix_pool = ["017", "019", "013", "014"]
@@ -641,26 +157,31 @@ def generate_account_number():
     middle = f"{random.randint(10000, 99999)}"
     return f"{prefix}{middle}***"
 
-def send_telegram_photo(caption_text, photo_url):
+def send_telegram_photo(caption_text):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendPhoto"
     payload = {
         "chat_id": CHAT_ID,
-        "photo": photo_url,
+        "photo": IMAGE_URL,
         "caption": caption_text,
         "parse_mode": "HTML"
     }
     try:
         response = requests.post(url, json=payload, timeout=15)
-        print(f"Status: {response.status_code} | Output: {response.text}")
+        print(f"Status: {response.status_code}")
         return response.status_code == 200
     except Exception as e:
         print(f"Error: {e}")
         return False
 
-print(f"মোট নাম: {len(unique_names)} টি। ছবিসহ মেসেজ সেন্ড শুরু হচ্ছে...")
+# GitHub Actions টাইমআউট থেকে বাঁচতে প্রতি সেশনে সর্বোচ্চ ৩৫টি মেসেজ পাঠাবে (~৪ ঘণ্টা)
+# এরপর স্বয়ংক্রিয়ভাবে পরবর্তী নতুন সেশন শুরু হবে
+SESSION_LIMIT = 35
+sent_count = 0
 
-while unique_names:
-    name = unique_names.pop()
+print(f"সেশন শুরু হয়েছে। মোট নাম সংখ্যা: {len(names_list)}")
+
+while names_list and sent_count < SESSION_LIMIT:
+    name = names_list.pop()
     amount = random.randint(20, 100)
     method = random.choice(["Bkash", "Nagad"])
     account = generate_account_number()
@@ -674,14 +195,16 @@ while unique_names:
         "⚡ <b>Status:</b> Instant Approved ✅"
     )
 
-    print(f"মেসেজ পাঠানো হচ্ছে: {name}")
-    send_telegram_photo(caption, IMAGE_URL)
+    send_telegram_photo(caption)
+    sent_count += 1
+    print(f"[{sent_count}] পোস্ট সম্পন্ন: {name}")
 
-    if not unique_names:
-        print("সবগুলো নাম একবার করে পাঠানো শেষ হয়েছে।")
+    if not names_list or sent_count >= SESSION_LIMIT:
         break
 
-    # ৪ থেকে ৬ মিনিট (২৪০ থেকে ৩৬০ সেকেন্ড) র‍্যান্ডম বিরতি
-    delay = random.randint(240, 360)
-    print(f"পরবর্তী মেসেজের জন্য অপেক্ষা: {delay} সেকেন্ড ({delay//60} মিনিট {delay%60} সেকেন্ড)...\n")
+    # ৬ থেকে ৮ মিনিট (৩৬০ থেকে ৪৮০ সেকেন্ড) বিরতি
+    delay = random.randint(360, 480)
+    print(f"অপেক্ষা করা হচ্ছে {delay} সেকেন্ড ({delay//60} মিনিট {delay%60} সেকেন্ড)...")
     time.sleep(delay)
+
+print("বর্তমান সেশন সম্পন্ন। পরবর্তী সেশন ট্রিগার হচ্ছে...")

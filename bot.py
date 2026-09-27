@@ -1,11 +1,10 @@
-import os
 import random
 import time
 import requests
 
-# গিটহাব সিক্রেটস থেকে টোকেন ও চ্যাট আইডি নেওয়া হচ্ছে
-BOT_TOKEN = os.getenv("8893193844:AAHjX3W1K3MqkAAdH5NV7_8TRVToFod7yRI")
-CHAT_ID = os.getenv("-1002673164624")
+# আপনার সরাসরি দেওয়া টোকেন ও চ্যাট আইডি
+BOT_TOKEN = "8893193844:AAHjX3W1K3MqkAAdH5NV7_8TRVToFod7yRI"
+CHAT_ID = "-1002673164624"
 
 raw_names = """
 তানভীর হাসান
@@ -331,7 +330,6 @@ raw_names = """
 রোদেলা টাপুর
 """
 
-# ইউনিক নাম সংগ্রহ ও র‍্যান্ডম সাজানো
 unique_names = list(set([name.strip() for name in raw_names.strip().split("\n") if name.strip()]))
 random.shuffle(unique_names)
 
@@ -351,13 +349,15 @@ def send_telegram_message(text):
     }
     try:
         response = requests.post(url, json=payload, timeout=10)
+        print(f"Status: {response.status_code} | Output: {response.text}")
         return response.status_code == 200
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Connection Error: {e}")
         return False
 
-print(f"মোট নাম: {len(unique_names)} টি। মেসেজ পাঠানো শুরু হচ্ছে...")
+print(f"মোট নাম: {len(unique_names)} টি।")
 
+# প্রথম মেসেজ
 while unique_names:
     name = unique_names.pop()
     amount = random.randint(20, 100)
@@ -373,12 +373,14 @@ while unique_names:
         "⚡ <b>Status:</b> Instant Approved ✅"
     )
 
+    print(f"মেসেজ পাঠানো হচ্ছে: {name}")
     send_telegram_message(message)
-    print(f"Sent: {name}")
 
     if not unique_names:
+        print("সকল নাম সম্পন্ন হয়েছে।")
         break
 
-    # ৪ থেকে ৬ মিনিট (২৪০-৩৬০ সেকেন্ড) বিরতি
+    # ৪ থেকে ৬ মিনিট (২৪০-৩৬০ সেকেন্ড) র‍্যান্ডম বিরতি
     delay = random.randint(240, 360)
+    print(f"অপেক্ষা করা হচ্ছে {delay} সেকেন্ড...")
     time.sleep(delay)

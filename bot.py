@@ -4,8 +4,8 @@ import time
 import requests
 
 # গিটহাব সিক্রেটস থেকে টোকেন ও চ্যাট আইডি নেওয়া হচ্ছে
-BOT_TOKEN = os.getenv("8664893118:AAGzEUGWu3rskerlKk4v8N42sBlXFIMRFAg")
-CHAT_ID = os.getenv("-1003991792277")
+BOT_TOKEN = os.getenv("8893193844:AAHjX3W1K3MqkAAdH5NV7_8TRVToFod7yRI")
+CHAT_ID = os.getenv("-1002673164624")
 
 raw_names = """
 তানভীর হাসান

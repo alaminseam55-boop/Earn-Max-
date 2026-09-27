@@ -8,327 +8,626 @@ CHAT_ID = "-1003991792277"
 IMAGE_URL = "https://i.postimg.cc/N02NLhCD/1790476363225.jpg"
 
 raw_names = """
-তানভীর হাসান
-সাব্বির আহমেদ
-মেহেদী হাসান
-নাঈম ইসলাম
-রাশেদুল ইসলাম
-শাকিল খান
-সুমন মিয়া
-সাদিয়া ইসলাম
-আরিফুল ইসলাম
-ফাহিম চৌধুরী
-আশিকুর রহমান
-রিফাত হোসেন
-রাকিবুল ইসলাম
-জাহিদুল ইসলাম
-তারেক মাহমুদ
-আল-আমিন
-নুসরাত জাহান
-সৌরভ হোসেন
-শামীম রেজা
-সোহেল রানা
-ইমরান হোসেন
-কামরুল হাসান
-নাজমুল হুদা
-সজল আহমেদ
-ফারজানা আক্তার
-পারভেজ মোশাররফ
-রিয়াজুল করিম
-মাহমুদ হাসান
-রুবেল মিয়া
-বাপ্পি হোসেন
-শাওন ইসলাম
-ফয়সাল আহমেদ
-তানিয়া আহমেদ
-তুহিন আহমেদ
-মুন্না হোসেন
-সাইদুর রহমান
-রনি শিকদার
-পলাশ চন্দ্র
-মামুনুর রশিদ
-জুয়েল রানা
-মারিয়া সুলতানা
-শাহরিয়ার নাফিস
-সিফাতুল্লাহ
-হৃদয় শেখ
-আকাশ চৌধুরী
-সাগর আহমেদ
-রাজিব আহমেদ
-নাসির উদ্দিন
-জান্নাতুল ফেরদৌস
-কাওসার আহমেদ
-মোস্তফা কামাল
-আনিসুর রহমান
-মোশাররফ হোসেন
-বিল্লাল হোসেন
-তৌহিদুল ইসলাম
-হাবিবুর রহমান
-শারমিন আক্তার
-আসাদুল হক
-মুস্তাফিজুর রহমান
-তামিম ইকবাল
-মুশফিকুর রহিম
-তাসকিন আহমেদ
-লিটন দাস
-এনামুল হক
-ফাতেমা তুজ জোহরা
-শফিউল ইসলাম
-নাজমুল হোসেন
-আবু সাঈদ
-হাসান মাহমুদ
-মারুফ হাসান
-শুভ্র দেব
-রাতুল হাসান
-তাহমিনা আক্তার
-প্রীতম সাহা
-দীপক বর্মণ
-বিজয় সরকার
-অমল রায়
-সঞ্জয় মণ্ডল
-সুজন মাহমুদ
-মাসুম বিল্লাহ
-আয়েশা সিদ্দিকা
-শাহিন আলম
-ইকবাল বাহার
-আনোয়ার হোসেন
-রুহুল আমিন
-সাইদুল ইসলাম
-সাখাওয়াত হোসেন
-আমিনুল ইসলাম
-খাদিজা বেগম
-মনিরুল হক
-সাজ্জাদ হোসেন
-দেলোয়ার হোসেন
-খোরশেদ আলম
-আজহারুল ইসলাম
-রোকনুজ্জামান
-মোফাজ্জল হোসেন
-ইশরাত জাহান
-শরিফুল ইসলাম
-আতিকুর রহমান
-হাসিবুল হাসান
-নাদিম মাহমুদ
-মোর্শেদ আলম
-শাহাদাত হোসেন
-মোমিনুল হক
-সাবরিনা রহমান
-জাহেদ চৌধুরী
-আশরাফুল আলম
-সাইফ হাসান
-ইয়াসিন আরাফাত
-কায়েস আহমেদ
-বোরহান উদ্দিন
-বখতিয়ার হোসেন
-লুবনা আহমেদ
-জুবায়ের আহমেদ
-ফারহান সাদিক
-আদনান সামি
-জিসান আহমেদ
-তানজিম হাসান
-সামিউল হক
-আবরার ফাহাদ
-স্মৃতি আক্তার
-মাহির ফয়সাল
-ওয়াসিম আকরাম
-রিয়াদ হোসেন
-বায়েজিদ বোস্তামী
-আফিফ হোসেন
-শরিফুল্লাহ
-জিহাদ ইসলাম
-বৃষ্টি দাস
-শিহাব উদ্দিন
-নাভিল আহমেদ
-আরিয়ান খান
-রায়হান কবীর
-নিয়াজ মোরশেদ
-মহিউদ্দিন
-সাজিদ রহমান
-রিতু চৌধুরী
-সোহাগ মিয়া
-আলমগীর কবির
-মফিজুর রহমান
-মানিক মিয়া
-স্বপন কুমার
-তপন রায়
-উজ্জ্বল হোসেন
-পূজা কর্মকার
-কিরণ শেখ
-লিটন মিয়া
-সবুজ শিকদার
-লালন মিয়া
-খোকন আহমেদ
-বাদল হোসেন
-মিলন মাহমুদ
-মাহিরা জাহান
-বকুল মিয়া
-পলাশ আহমেদ
-শিপন হোসেন
-টিপু সুলতান
-বিপ্লব কুমার
-শ্যামল দাস
-জয়ন্ত রায়
-ফারিয়া তাসনিম
-চন্দন সাহা
-নিখিল চন্দ্র
-আশিস কুমার
-প্রবীর ঘোষ
-রাজীব সেন
-সৌরভ গাঙ্গুলী
-পুলক কুমার
-আফসানা মিমি
-সমীর দেবনাথ
-বিপ্লব বিশ্বাস
-অরূপ রতন
-বিকাশ চন্দ্র
-সুশান্ত পাল
-সুব্রত রায়
-মাধব চন্দ্র
-মেহের আফরোজ
-প্রণব সাহা
-তন্ময় সাহা
-দীপংকর বিশ্বাস
-রাহুল সূত্রধর
-সুজিত কর্মকার
-অসীম কুমার
-গোবিন্দ দাস
-শমী কায়সার
-উৎপল কান্তি
-বাসুদেব রায়
-অনন্ত কুমার
-প্রদীপ সেন
-অজিত বর্মণ
-মনোজ দেব
-তারক চন্দ্র
-তিশা আক্তার
-কার্তিক দাস
-গোকুল কৃষ্ণ
-নিহার রঞ্জন
-শ্যাম সুন্দর
-রঞ্জন অধিকারী
-হরিপদ সাহা
-ফয়জুদ্দিন আহমেদ
-মিম আক্তার
-কেরামত আলী
-গিয়াস উদ্দিন
-রফিকুল ইসলাম
-সিরাজুল ইসলাম
-হাবিবুল্লাহ মিসবাহ
-আজিজুল বারী
-মেসবাহ উদ্দিন
-মাহিয়া মাহি
-নুরুল ইসলাম
-আজমল হোসেন
-সাঈদ আনসারী
-মুবিনুল হক
-এহসান রানা
-সাদিকুর রহমান
-ওলিউল্লাহ
-তাসনিয়া ফারিণ
-ফজলুর রহমান
-আসফাক চৌধুরী
-শাহেদ জামান
-তৌফিক আহমেদ
-ইশতিয়াক মাহমুদ
-মোস্তাক আহমেদ
-সামসুল আরেফিন
-সাফা কবির
-মাহতাব উদ্দিন
-কায়সার হামিদ
-তসলিম উদ্দিন
-ওয়াহিদুর রহমান
-রবিউল ইসলাম
-শহীদুল হক
-ফরিদুল আলম
-মৌমিতা পাল
-হারুনুর রশীদ
-ইসমাইল হোসেন
-লোকমান হাকিম
-হাফিজুর রহমান
-ইদ্রিস আলী
-ইউসুফ জামিল
-সোলাইমান খান
-সীমা পারভীন
-জাকারিয়া মাসুদ
-আইয়ুব আলী
-সালেহ আহমেদ
-নুরুজ্জামান
-ইলিয়াস কাঞ্চন
-মোবারক হোসেন
-মোকাররম হোসেন
-হাবিবা সুমি
-মাহফুজুর রহমান
-খলিলুর রহমান
-আনিসুল হক
-মোজাম্মেল হক
-বজলুর রহমান
-সিদ্দিকুর রহমান
-মিজানুর রহমান
-মুসকান আক্তার
-মজিবুর রহমান
-জিয়াউর রহমান
-সাইফুর রহমান
-হাবিবুল বাশার
-শাহীনুর রহমান
-ওবায়দুর রহমান
-এনামুল হক বিজয়
-মেহজাবিন চৌধুরী
-আশরাফুজ্জামান
-শওকত আলী
-কফিল উদ্দিন
-লুৎফর রহমান
-এনায়েত উল্লাহ
-সানাউল্লাহ
-হাসমত আলী
-রাফিয়া আহমেদ
-শমসের আলী
-বরকত উল্লাহ
-গফুর মিয়া
-ছাত্তার হাওলাদার
-কাসেম আলী
-হাসেম মোল্লা
-জসিম উদ্দিন
-লাবণী আক্তার
-সালাম শিকদার
-কালাম শেখ
-মতিন মিয়া
-সোবহান গাজী
-সোনিয়া ইসলাম
-নিপা আক্তার
-জুঁই আহমেদ
-নার্গিস সুলতানা
-কুসুম শিকদার
-নাদিয়া আহমেদ
-সারিকা সাবরিন
-ভাবনা আহমেদ
-স্বস্তিকা দত্ত
-মিমি চক্রবর্তী
-পায়েল সরকার
-তনুশ্রী চক্রবর্তী
-ইশা সাহা
-ঋতুপর্ণা সেনগুপ্ত
-মুনমুন সেন
-পাওলি দাম
-সোহিনী সরকার
-মানালী দে
-মধুমিথা সরকার
-দেবলীনা কুমার
-অনন্যা চ্যাটার্জী
-অপরাজিতা আঢ্য
-সন্ধারানী ঘোষ
-অঞ্জনা ভৌমিক
-ইমন চক্রবর্তী
-মেখলা দাশগুপ্ত
-সাহানা বাজপেয়ী
-চন্দনা মজুমদার
-বেবী নাজনীন
-ডলি সায়ন্তনী
-সালমা আক্তার
-নিশিতা বড়ুয়া
-ফারহানা মিলি
-সোহানা সাবা
-মিষ্টি জান্নাত
-রোদেলা টাপুর
+ Ayaan
+Zayan
+Aryan
+Rayyan
+Arham
+Samaira
+Kabir
+Aarav
+Rohan
+Reyansh
+Shaan
+Vivaan
+Zaid
+Farhan
+Rehan
+Aariz
+Arman
+Nihan
+Shayan
+Izaan
+Adyan
+Faheem
+Tahsin
+Rizwan
+Zubair
+Kian
+Hamza
+Taimur
+Bilal
+Ahad
+Daniyal
+Sameer
+Nabeel
+Zidan
+Rayan
+Sarah
+Mirza
+Eshan
+Safwan
+Wasif
+Ahil
+Nahian
+Zohan
+Rohan
+Tanvir
+Sami
+Nahid
+Afnan
+Armaan
+Irfan
+Mahir
+Tawhid
+Zeeshan
+Rafi
+Rifat
+Anas
+Hasin
+Sayed
+Junaid
+Riyad
+Ivaan
+Siyam
+Rayid
+Muntaha
+Parvez
+Ashik
+Shahil
+Aarush
+Tamim
+Aman
+Affan
+Yusuf
+Ayan
+Naeem
+Nafis
+Rakin
+Shahid
+Zuhayr
+Adil
+Ehan
+Munim
+Raad
+Tashfin
+Nihal
+Rizvi
+Sadman
+Shafin
+Arif
+Tasnim
+Mahi
+Zarif
+Araf
+Fahad
+Ruhan
+Sayhan
+Labib
+Nadim
+Shakib
+Tanim
+Rakin
+Abrar
+Ayman
+Azhar
+Hasan
+Farzin
+Zain
+Rabi
+Saad
+Tariq
+Imran
+Zavier
+Daiyan
+Arvin
+Raihan
+Mikael
+Suhail
+Zaki
+Faiyaz
+Nahiyan
+Zuhair
+Ahnaf
+Mehran
+Sarfaraz
+Rayyan
+Aayan
+Zayan
+Aryan
+Rayyan
+Arham
+Anaya
+Kabir
+Aarav
+Rohan
+Reyansh
+Shaan
+Vivaan
+Zaid
+Farhan
+Rehan
+Aariz
+Arman
+Nihan
+Shayan
+Izaan
+Adyan
+Faheem
+Tahsin
+Rizwan
+Zubair
+Kian
+Hamza
+Taimur
+Bilal
+Ahad
+Daniyal
+Sameer
+Nabeel
+Zidan
+Rayan
+Myra
+Mirza
+Eshan
+Safwan
+Wasif
+Ahil
+Nahian
+Zohan
+Rohan
+Tanvir
+Sami
+Nahid
+Afnan
+Armaan
+Irfan
+Mahir
+Tawhid
+Zeeshan
+Rafi
+Rifat
+Anas
+Hasin
+Sayed
+Junaid
+Riyad
+Ivaan
+Siyam
+Rayid
+Ayat
+Parvez
+Ashik
+Shahil
+Aarush
+Tamim
+Aman
+Affan
+Yusuf
+Ayan
+Naeem
+Nafis
+Rakin
+Shahid
+Zuhayr
+Adil
+Ehan
+Munim
+Raad
+Tashfin
+Nihal
+Rizvi
+Sadman
+Shafin
+Arif
+Zara
+Mahi
+Zarif
+Araf
+Fahad
+Ruhan
+Sayhan
+Labib
+Nadim
+Shakib
+Tanim
+Rakin
+Abrar
+Ayman
+Azhar
+Hasan
+Farzin
+Zain
+Rabi
+Saad
+Tariq
+Imran
+Zavier
+Daiyan
+Arvin
+Raihan
+Mikael
+Suhail
+Zaki
+Faiyaz
+Nahiyan
+Zuhair
+Ahnaf
+Mehran
+Sarfaraz
+Rayyan
+Aayan
+Zayan
+Aryan
+Rayyan
+Arham
+Inaya
+Kabir
+Aarav
+Rohan
+Reyansh
+Shaan
+Vivaan
+Zaid
+Farhan
+Rehan
+Aariz
+Arman
+Nihan
+Shayan
+Izaan
+Adyan
+Faheem
+Tahsin
+Rizwan
+Zubair
+Kian
+Hamza
+Taimur
+Bilal
+Ahad
+Daniyal
+Sameer
+Nabeel
+Zidan
+Rayan
+Aria
+Mirza
+Eshan
+Safwan
+Wasif
+Ahil
+Nahian
+Zohan
+Rohan
+Tanvir
+Sami
+Nahid
+Afnan
+Armaan
+Irfan
+Mahir
+Tawhid
+Zeeshan
+Rafi
+Rifat
+Anas
+Hasin
+Sayed
+Junaid
+Riyad
+Ivaan
+Siyam
+Rayid
+Ayla
+Parvez
+Ashik
+Shahil
+Aarush
+Tamim
+Aman
+Affan
+Yusuf
+Ayan
+Naeem
+Nafis
+Rakin
+Shahid
+Zuhayr
+Adil
+Ehan
+Munim
+Raad
+Tashfin
+Nihal
+Rizvi
+Sadman
+Shafin
+Arif
+Zoya
+Mahi
+Zarif
+Araf
+Fahad
+Ruhan
+Sayhan
+Labib
+Nadim
+Shakib
+Tanim
+Rakin
+Abrar
+Ayman
+Azhar
+Hasan
+Farzin
+Zain
+Rabi
+Saad
+Tariq
+Imran
+Zavier
+Daiyan
+Arvin
+Raihan
+Mikael
+Suhail
+Zaki
+Faiyaz
+Nahiyan
+Zuhair
+Ahnaf
+Mehran
+Sarfaraz
+Rayyan
+Aayan
+Zayan
+Aryan
+Rayyan
+Arham
+Kiara
+Kabir
+Aarav
+Rohan
+Reyansh
+Shaan
+Vivaan
+Zaid
+Farhan
+Rehan
+Aariz
+Arman
+Nihan
+Shayan
+Izaan
+Adyan
+Faheem
+Tahsin
+Rizwan
+Zubair
+Kian
+Hamza
+Taimur
+Bilal
+Ahad
+Daniyal
+Sameer
+Nabeel
+Zidan
+Rayan
+Tara
+Mirza
+Eshan
+Safwan
+Wasif
+Ahil
+Nahian
+Zohan
+Rohan
+Tanvir
+Sami
+Nahid
+Afnan
+Armaan
+Irfan
+Mahir
+Tawhid
+Zeeshan
+Rafi
+Rifat
+Anas
+Hasin
+Sayed
+Junaid
+Riyad
+Ivaan
+Siyam
+Rayid
+Ira
+Parvez
+Ashik
+Shahil
+Aarush
+Tamim
+Aman
+Affan
+Yusuf
+Ayan
+Naeem
+Nafis
+Rakin
+Shahid
+Zuhayr
+Adil
+Ehan
+Munim
+Raad
+Tashfin
+Nihal
+Rizvi
+Sadman
+Shafin
+Arif
+Diya
+Mahi
+Zarif
+Araf
+Fahad
+Ruhan
+Sayhan
+Labib
+Nadim
+Shakib
+Tanim
+Rakin
+Abrar
+Ayman
+Azhar
+Hasan
+Farzin
+Zain
+Rabi
+Saad
+Tariq
+Imran
+Zavier
+Daiyan
+Arvin
+Raihan
+Mikael
+Suhail
+Zaki
+Faiyaz
+Nahiyan
+Zuhair
+Ahnaf
+Mehran
+Sarfaraz
+Rayyan
+Aayan
+Zayan
+Aryan
+Rayyan
+Arham
+Rhea
+Kabir
+Aarav
+Rohan
+Reyansh
+Shaan
+Vivaan
+Zaid
+Farhan
+Rehan
+Aariz
+Arman
+Nihan
+Shayan
+Izaan
+Adyan
+Faheem
+Tahsin
+Rizwan
+Zubair
+Kian
+Hamza
+Taimur
+Bilal
+Ahad
+Daniyal
+Sameer
+Nabeel
+Zidan
+Rayan
+Siya
+Mirza
+Eshan
+Safwan
+Wasif
+Ahil
+Nahian
+Zohan
+Rohan
+Tanvir
+Sami
+Nahid
+Afnan
+Armaan
+Irfan
+Mahir
+Tawhid
+Zeeshan
+Rafi
+Rifat
+Anas
+Hasin
+Sayed
+Junaid
+Riyad
+Ivaan
+Siyam
+Rayid
+Avani
+Parvez
+Ashik
+Shahil
+Aarush
+Tamim
+Aman
+Affan
+Yusuf
+Ayan
+Naeem
+Nafis
+Rakin
+Shahid
+Zuhayr
+Adil
+Ehan
+Munim
+Raad
+Tashfin
+Nihal
+Rizvi
+Sadman
+Shafin
+Arif
+Nyla
+Mahi
+Zarif
+Araf
+Fahad
+Ruhan
+Sayhan
+Labib
+Nadim
+Shakib
+Tanim
+Rakin
+Abrar
+Ayman
+Azhar
+Hasan
+Farzin
+Zain
+Rabi
+Saad
+Tariq
+Imran
+Zavier
+Daiyan
+Arvin
+Raihan
+Mikael
+Suhail
+Zaki
+Faiyaz
+Nahiyan
+Zuhair
+Ahnaf
+Mehran
+Sarfaraz
+Rayyan
 """
 
 # ইউনিক নাম ফিল্টার করা এবং র‍্যান্ডম সাজানো

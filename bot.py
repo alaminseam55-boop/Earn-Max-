@@ -3,8 +3,8 @@ import time
 import requests
 
 # আপনার প্রদান করা বট টোকেন, চ্যাট আইডি ও ছবির লিংক
-BOT_TOKEN = "8664893118:AAGzEUGWu3rskerlKk4v8N42sBlXFIMRFAg"
-CHAT_ID = "-1003991792277"
+BOT_TOKEN = "8893193844:AAHjX3W1K3MqkAAdH5NV7_8TRVToFod7yRI"
+CHAT_ID = "-1002673164624"
 IMAGE_URL = "https://i.postimg.cc/N02NLhCD/1790476363225.jpg"
 
 raw_names = """

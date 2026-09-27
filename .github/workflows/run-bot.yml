@@ -1,7 +1,7 @@
 name: Telegram Auto Sender Bot
 
 on:
-  workflow_dispatch: # আপনি নিজে যখন 'Run workflow' বাটনে ক্লিক করবেন তখন চলবে
+  workflow_dispatch:
 
 jobs:
   run-script:
@@ -20,8 +20,5 @@ jobs:
           pip install requests
 
       - name: Run Telegram Bot
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python bot.py

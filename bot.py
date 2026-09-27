@@ -2,9 +2,10 @@ import random
 import time
 import requests
 
-# আপনার সরাসরি দেওয়া টোকেন ও চ্যাট আইডি
-BOT_TOKEN = "8893193844:AAHjX3W1K3MqkAAdH5NV7_8TRVToFod7yRI"
-CHAT_ID = "-1002673164624"
+# আপনার প্রদান করা বট টোকেন, চ্যাট আইডি ও ছবির লিংক
+BOT_TOKEN = "8664893118:AAGzEUGWu3rskerlKk4v8N42sBlXFIMRFAg"
+CHAT_ID = "-1003991792277"
+IMAGE_URL = "https://i.postimg.cc/N02NLhCD/1790476363225.jpg"
 
 raw_names = """
 তানভীর হাসান
@@ -330,6 +331,7 @@ raw_names = """
 রোদেলা টাপুর
 """
 
+# ইউনিক নাম ফিল্টার করা এবং র‍্যান্ডম সাজানো
 unique_names = list(set([name.strip() for name in raw_names.strip().split("\n") if name.strip()]))
 random.shuffle(unique_names)
 
@@ -340,31 +342,31 @@ def generate_account_number():
     middle = f"{random.randint(10000, 99999)}"
     return f"{prefix}{middle}***"
 
-def send_telegram_message(text):
-    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+def send_telegram_photo(caption_text, photo_url):
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendPhoto"
     payload = {
         "chat_id": CHAT_ID,
-        "text": text,
+        "photo": photo_url,
+        "caption": caption_text,
         "parse_mode": "HTML"
     }
     try:
-        response = requests.post(url, json=payload, timeout=10)
+        response = requests.post(url, json=payload, timeout=15)
         print(f"Status: {response.status_code} | Output: {response.text}")
         return response.status_code == 200
     except Exception as e:
-        print(f"Connection Error: {e}")
+        print(f"Error: {e}")
         return False
 
-print(f"মোট নাম: {len(unique_names)} টি।")
+print(f"মোট নাম: {len(unique_names)} টি। ছবিসহ মেসেজ সেন্ড শুরু হচ্ছে...")
 
-# প্রথম মেসেজ
 while unique_names:
     name = unique_names.pop()
     amount = random.randint(20, 100)
     method = random.choice(["Bkash", "Nagad"])
     account = generate_account_number()
 
-    message = (
+    caption = (
         "✨ <b>EARN MAX PAYMENT — WITHDRAWAL SUCCESSFUL</b> 💸\n\n"
         f"👤 <b>User Name:</b> {name}\n"
         f"💰 <b>Amount:</b> ৳ {amount}\n"
@@ -374,13 +376,13 @@ while unique_names:
     )
 
     print(f"মেসেজ পাঠানো হচ্ছে: {name}")
-    send_telegram_message(message)
+    send_telegram_photo(caption, IMAGE_URL)
 
     if not unique_names:
-        print("সকল নাম সম্পন্ন হয়েছে।")
+        print("সবগুলো নাম একবার করে পাঠানো শেষ হয়েছে।")
         break
 
-    # ৪ থেকে ৬ মিনিট (২৪০-৩৬০ সেকেন্ড) র‍্যান্ডম বিরতি
+    # ৪ থেকে ৬ মিনিট (২৪০ থেকে ৩৬০ সেকেন্ড) র‍্যান্ডম বিরতি
     delay = random.randint(240, 360)
-    print(f"অপেক্ষা করা হচ্ছে {delay} সেকেন্ড...")
+    print(f"পরবর্তী মেসেজের জন্য অপেক্ষা: {delay} সেকেন্ড ({delay//60} মিনিট {delay%60} সেকেন্ড)...\n")
     time.sleep(delay)
